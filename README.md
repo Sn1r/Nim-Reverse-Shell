@@ -19,9 +19,10 @@ nim c -d:mingw --app:gui rev_shell.nim
 
 ## Detection
 
-As of July 2023, the compiled executable is currently detected by 12/71 vendors. Enhancements to bypass detection are planned for future updates :)
+As of July 2023, the compiled executable was detected by 12/71 vendors. Enhancements to bypass detection are planned for future updates :)
 
-![image](https://github.com/Sn1r/Nim-Reverse-Shell/assets/71400526/4f778174-a43e-48a6-a9e9-b06892eb8f0b)
+![image](https://github.com/Sn1r/Nim-Reverse-Shell/assets/71400526/e1b6ce9e-16fb-4a21-bcfb-c4d68ae909e8)
+
 
 
 
