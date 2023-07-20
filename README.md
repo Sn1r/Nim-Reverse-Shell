@@ -17,13 +17,6 @@ The code can be compiled in various ways using Nim. In this example, the code is
 nim c -d:mingw --app:gui rev_shell.nim
 ```
 
-## Detection
-
-As of July 2023, the compiled executable was detected by 12/71 vendors. Enhancements to bypass detection are planned for future updates :)
-
-![image](https://github.com/Sn1r/Nim-Reverse-Shell/assets/71400526/e1b6ce9e-16fb-4a21-bcfb-c4d68ae909e8)
-
-
 
 
 
